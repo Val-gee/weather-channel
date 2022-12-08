@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="Description" content="Enter your description here" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="./Develop/css/style.css">
+    <title>Weather Channel</title>
+</head>
+
+<body>
+    <header class="title-header">
+        <h1>Weather Dashboard</h1>
+    </header>
+    <div class="cityContainer">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-3">
+                    <h1>City Search</h1>
+                    <form>
+                        <div class="mb-3 float-left">
+                            <label for="inputCity" class="form-label">Search City:</label>
+                            <input type="text" class="form-control" id="cityInput" placeholder="ex. New York City">
+                            <button type="submit" class="btn btn-primary" id="search-city">Search</button>
+                            <hr>
+                        </div>  
+                    </form>
+                    <div id="history-view">
+                    </div>
+                </div>
+                <div class="col-md-9">
+                    <h2 class="container-header">5-day forecast</h2>
+                    <div class="card-container row float:right">
+                        <div class="card col-12 col-md-2 day1" style="width: 18rem;">
+                            <div class="card-Header">
+                                Monday
+                            </div>
+                            <ul class="list-group list-group-flush">
+                                <li>Card</li>
+                            </ul>
+                        </div>
+            
+                        <div class="card col-12 col-md-2 day2" style="width: 18rem;">
+                            <div class="card-Header">
+                                Tuesday
+                            </div>
+                            <ul class="list-group list-group-flush">
+                                <li>Card</li>
+                            </ul>
+                        </div>
+            
+                        <div class="card col-12 col-md-2 day3" style="width: 18rem;">
+                            <div class="card-Header">
+                                Wednesday
+                            </div>
+                            <ul class="list-group list-group-flush">
+                                <li>Card</li>
+                            </ul>
+                        </div>
+            
+                        <div class="card col-12 col-md-2 day4" style="width: 18rem;">
+                            <div class="card-Header">
+                                Thursday
+                            </div>
+                            <ul class="list-group list-group-flush">
+                                <li>Card</li>
+                            </ul>
+                        </div>
+            
+                        <div class="card col-12 col-md-2 day5" style="width: 18rem;">
+                            <div class="card-Header">
+                                Friday
+                            </div>
+                            <ul class="list-group list-group-flush">
+                                <li>Card</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div id="searchedCityInfo">
+        </div>
+    </div>
+
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
+        <script src="./Develop/js/style.js"></script>
+</body>
+
+</html>
