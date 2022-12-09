@@ -13,8 +13,8 @@
 </head>
 
 <body>
-    <header class="title-header">
-        <h1>Weather Dashboard</h1>
+    <header class="title-header bg-info p-2 text-white ">
+        <h1 class="text-center">Weather Dashboard</h1>
     </header>
     <div class="cityContainer">
         <div class="container-fluid">
@@ -23,24 +23,26 @@
                     <h1>City Search</h1>
                     <form>
                         <div class="mb-3 float-left">
-                            <label for="inputCity" class="form-label">Search City:</label>
+                            <label for="inputCity" class="form-label input-group-text">Search City:</label>
                             <input type="text" class="form-control" id="cityInput" placeholder="ex. New York City">
-                            <button type="submit" class="btn btn-primary" id="search-city">Search</button>
+                            <button type="submit" class="btn btn-primary mt-2" id="search-city">Search</button>
                             <hr>
                         </div>  
                     </form>
                     <div id="history-view">
                     </div>
+                    <div id="searchedCityInfo">
+                    </div>            
                 </div>
                 <div class="col-md-9">
-                    <h2 class="container-header">5-day forecast</h2>
+                    <h2 class="container-header text-center">5-day forecast</h2>
                     <div class="card-container row float:right">
-                        <div class="card col-12 col-md-2 day1" style="width: 18rem;">
+
+                        <div class="card col-12 col-md-2 w-75 day1" style="width: 18rem;">
                             <div class="card-Header">
                                 Monday
                             </div>
                             <ul class="list-group list-group-flush">
-                                <li>Card</li>
                             </ul>
                         </div>
             
@@ -49,7 +51,6 @@
                                 Tuesday
                             </div>
                             <ul class="list-group list-group-flush">
-                                <li>Card</li>
                             </ul>
                         </div>
             
@@ -58,7 +59,6 @@
                                 Wednesday
                             </div>
                             <ul class="list-group list-group-flush">
-                                <li>Card</li>
                             </ul>
                         </div>
             
@@ -67,7 +67,6 @@
                                 Thursday
                             </div>
                             <ul class="list-group list-group-flush">
-                                <li>Card</li>
                             </ul>
                         </div>
             
@@ -76,7 +75,6 @@
                                 Friday
                             </div>
                             <ul class="list-group list-group-flush">
-                                <li>Card</li>
                             </ul>
                         </div>
                     </div>
@@ -84,8 +82,6 @@
             </div>
         </div>
         
-        <div id="searchedCityInfo">
-        </div>
     </div>
 
 
