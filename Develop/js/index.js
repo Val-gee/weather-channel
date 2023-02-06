@@ -28,11 +28,13 @@ function displayCityInfo(cityname) {
         console.log(response)
 
         var cityTitle = $("<h3>").text(cityname);
+        var p0 = $("<p>");
         var p = $("<p>");
         var p2 = $("<p>");
         var p3 = $("<p>");
         var img = $("<img>");
 
+        var date = response.list[6].dt_txt;
         var wind = response.list[6].wind.speed;
         var humidity = response.list[6].main.humidity;
         var temp = response.list[6].main.temp;
@@ -46,11 +48,13 @@ function displayCityInfo(cityname) {
         console.log(temp);
         console.log(imageURL);
 
+        p0.text("Date: " + date);
         p.text("Wind Speed:" + " " + wind + " " + "mph");
         p2.text("Humidity:" + " " + humidity + " " + "%");
         p3.text("Temp:" + " " + temp + " " + "°F");
 
         cityInfo.append(cityTitle);
+        cityInfo.append(p0);
         cityInfo.append(p);
         cityInfo.append(p2);
         cityInfo.append(p3);
