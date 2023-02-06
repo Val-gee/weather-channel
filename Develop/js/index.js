@@ -63,7 +63,6 @@ function displayCityInfo(cityname) {
 }
 
 function displayHistory() {
-
     for (var i = 0; i < cities.length; i++) {
         var a = $("<button>");
 
@@ -196,8 +195,10 @@ function displayFiveDayForecast(cityname) {
 $('#search-city').on('click', function (event) {
     event.preventDefault();
 
+
     var cityname = $('#cityInput').val().trim();
 
+    localStorage.setItem('city search', cityname);
     console.log(cityname);
 
     cities.push(cityname);
